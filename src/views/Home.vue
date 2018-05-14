@@ -2,15 +2,18 @@
   <v-container fluid>
     <v-slide-y-transition mode="out-in">
       <v-layout column align-center>
-        <img src="@/assets/logo.png" alt="Vuetify.js" class="mb-5">
-        <blockquote>
-          &#8220;First, solve the problem. Then, write the code.&#8221;
-          <footer>
-            <small>
-              <em>&mdash;John Johnson</em>
-            </small>
-          </footer>
-        </blockquote>
+        <v-card primary-title>
+          <v-card-title>
+            <div class="intro-card">
+              <h1>About Ashton Hellwig</h1>
+            </div>
+          </v-card-title>
+          <v-card-text>
+            <p>Welcome to my personal website, simply detailing my experience. This version is written in Vue, with the source availble in on the
+              <router-link to="/about">about</router-link> page.
+            </p>
+          </v-card-text>
+        </v-card>
       </v-layout>
     </v-slide-y-transition>
   </v-container>
@@ -18,7 +21,11 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+/* .intro-card {
+  color: blue;
+} */
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
