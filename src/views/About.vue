@@ -1,8 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
-    <p>Return to
-      <router-link to="/home">home</router-link>.
-    </p>
+    <v-layout column align-center justify-space-around>
+      <v-card>
+        <v-card-title>
+          <div>
+            <h1 class="primary-title">About This Site</h1>
+          </div>
+        </v-card-title>
+        <v-card-text>
+          <p>This site was written in Vue.js CLI 3.0</p>
+        </v-card-text>
+      </v-card>
+    </v-layout>
   </div>
 </template>

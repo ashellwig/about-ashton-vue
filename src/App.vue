@@ -2,7 +2,7 @@
   <v-app>
     <v-navigation-drawer persistent :mini-variant="miniVariant" v-model="drawer" enable-resize-watcher app>
       <v-list>
-        <v-list-tile value="true" v-for="(item, i) in items" :key="i">
+        <v-list-tile value="true" v-for="(item, i) in items" :to="item.path" :key="i">
           <v-list-tile-action>
             <v-icon v-html="item.icon"></v-icon>
           </v-list-tile-action>
@@ -32,13 +32,17 @@ export default {
     return {
       drawer: false,
       items: [{
-        icon: 'bubble_chart',
+        icon: 'home',
         title: 'Home',
-        path: '/home'
+        path: '/'
       }, {
-        icon: 'about',
+        icon: ' fa-question-circle-o',
         title: 'About',
         path: '/about'
+      }, {
+        icon: 'bubble_chart',
+        title: 'Experience',
+        'path': '/experience'
       }],
       miniVariant: false,
       right: true,
