@@ -20,7 +20,9 @@
             </div>
           </v-card-title>
           <v-card-actions>
-            <v-btn color="green" @click.native="showWag = !showWag">Wag! Walking</v-btn>
+            <v-btn color="green" @click.native="showWag = !showWag">
+              <v-icon left>fa-paw</v-icon>Wag! Walking
+            </v-btn>
             <v-btn color="red" @click.native="showCamp = !showCamp">
               <v-icon left>fa-bed</v-icon>Camp Bow Wow
             </v-btn>
@@ -58,7 +60,9 @@
             <v-btn color="green" @click.native="showMgr = !showMgr">
               <v-icon left>fa-database</v-icon>Mrs. Green&apos;s Remedies
             </v-btn>
-            <v-btn color="blue" @click.native="showTrim = !showTrim">Trimble Geospatial</v-btn>
+            <v-btn color="blue" @click.native="showTrim = !showTrim">
+              <v-icon left>fa-map</v-icon>Trimble Geospatial
+            </v-btn>
           </v-card-actions>
           <v-slide-y-transition>
             <v-card-text v-show="showIbm">
