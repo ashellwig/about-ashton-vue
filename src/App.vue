@@ -14,9 +14,11 @@
           <v-list-tile slot="activator">
             <v-list-tile-title>Personal Life</v-list-tile-title>
           </v-list-tile>
-          <v-list-tile v-for="(personal, i) in personals" :to="peronal.path" :key="i">
+          <v-list-tile v-for="(personal, i) in personals" :to="personal.path" :key="i">
             <v-list-tile-title v-text="personal.name"></v-list-tile-title>
-            <v-list-tile-action></v-list-tile-action>
+            <v-list-tile-action>
+              <v-icon v-html="personal.icon"></v-icon>
+            </v-list-tile-action>
           </v-list-tile>
         </v-list-group>
       </v-list>
@@ -42,11 +44,11 @@ export default {
       drawer: false,
       personals: [{
         name: 'Family',
-        path: '/family',
+        path: '/personals/family',
         icon: 'account_circle'
       }, {
         name: 'Pets',
-        path: '/pets',
+        path: '/peronals/pets',
         icon: 'account_circle'
       }
       ],

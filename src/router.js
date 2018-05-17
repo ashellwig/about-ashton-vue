@@ -4,7 +4,7 @@ import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Experience from './views/Experience.vue'
 import Family from './views/personals/Family.vue'
-import Pets from './views/personals'
+import Pets from './views/personals/Pets.vue'
 
 Vue.use(Router)
 
@@ -26,12 +26,12 @@ export default new Router({
       component: Experience
     },
     {
-      path: '/personal/family',
+      path: '/personals/family',
       name: 'family',
       component: Family
     },
     {
-      path: '/personal/pets',
+      path: '/personals/pets',
       name: 'pets',
       component: Pets
     }
