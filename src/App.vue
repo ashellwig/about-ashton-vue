@@ -10,6 +10,15 @@
             <v-list-tile-title v-bind:to="item.path" v-text="item.title"></v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
+        <v-list-group prepend-icon="account_circle" value="true">
+          <v-list-tile slot="activator">
+            <v-list-tile-title>Personal Life</v-list-tile-title>
+          </v-list-tile>
+          <v-list-tile v-for="(personal, i) in personals" :to="peronal.path" :key="i">
+            <v-list-tile-title v-text="personal.name"></v-list-tile-title>
+            <v-list-tile-action></v-list-tile-action>
+          </v-list-tile>
+        </v-list-group>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar app :clipped-left="clipped">
@@ -31,6 +40,16 @@ export default {
   data () {
     return {
       drawer: false,
+      personals: [{
+        name: 'Family',
+        path: '/family',
+        icon: 'account_circle'
+      }, {
+        name: 'Pets',
+        path: '/pets',
+        icon: 'account_circle'
+      }
+      ],
       items: [{
         icon: 'home',
         title: 'Home',

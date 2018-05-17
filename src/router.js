@@ -3,6 +3,8 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Experience from './views/Experience.vue'
+import Family from './views/personals/Family.vue'
+import Pets from './views/personals'
 
 Vue.use(Router)
 
@@ -22,6 +24,16 @@ export default new Router({
       path: '/experience',
       name: 'experience',
       component: Experience
+    },
+    {
+      path: '/personal/family',
+      name: 'family',
+      component: Family
+    },
+    {
+      path: '/personal/pets',
+      name: 'pets',
+      component: Pets
     }
   ]
 })
