@@ -9,6 +9,9 @@
                 <h1>My Family</h1>
               </div>
             </v-card-title>
+            <v-card-text>
+              I live in Colorado with my girlfriend and two pets: a black cat and a dog.
+            </v-card-text>
           </v-card>
           <br>
           <v-carousel>

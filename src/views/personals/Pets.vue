@@ -1,8 +1,19 @@
 <template>
   <div class="pets">
-    <v-container>
+    <v-container fixed>
       <v-slide-y-transition mode="out-in">
-        <v-layout>
+        <v-layout column align-center>
+          <v-card>
+            <v-card-title primary-title>
+              <div>
+                <h1>My Pets</h1>
+              </div>
+            </v-card-title>
+            <v-card-text>
+              I live in Colorado with my girlfriend and two pets: a black cat and a dog.
+            </v-card-text>
+          </v-card>
+          <br>
           <v-carousel>
             <v-carousel-item v-for="(photo, i) in photos" :src="photo.src" :key="i"></v-carousel-item>
           </v-carousel>
